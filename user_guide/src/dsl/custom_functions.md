@@ -51,7 +51,7 @@ print(df)
 ```
 
 ```rust,noplayground
-{{#include ../examples/expressions/map_function.rs:6:21}}
+{{#include ../examples/expressions/map_function.rs:groupby}}
 ```
 
 </div>

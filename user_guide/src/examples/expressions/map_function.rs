@@ -2,6 +2,7 @@ use color_eyre::Result;
 use polars::prelude::*;
 
 fn main() -> Result<()> {
+    // ANCHOR: groupby
     let df = df! [
         "keys" => ["a", "a", "b"],
         "values" => [10, 7, 1],
@@ -19,6 +20,7 @@ fn main() -> Result<()> {
         .collect()?;
 
     println!("{}", out);
+    // ANCHOR_END: groupby
 
     Ok(())
 }
